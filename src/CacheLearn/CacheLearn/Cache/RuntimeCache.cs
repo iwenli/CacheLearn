@@ -135,8 +135,8 @@ namespace CacheLearn.Cache
         #region 有过期时间的插入缓存数据  
         public bool Set<T>(string CacheKey, T objObject, DateTime expiresAt)
         {
-            HttpRuntime.Cache.Insert(CacheKey, objObject, null, expiresAt, Cache.NoSlidingExpiration);
-            HttpRuntime.Cache.Insert(CacheKey + "_time", expiresAt, null, expiresAt, Cache.NoSlidingExpiration);//存储过期时间  
+            //HttpRuntime.Cache.Insert(CacheKey, objObject, null, expiresAt, Cache.NoSlidingExpiration);
+            //HttpRuntime.Cache.Insert(CacheKey + "_time", expiresAt, null, expiresAt, Cache.NoSlidingExpiration);//存储过期时间  
             return true;
         }
         #endregion
@@ -144,9 +144,9 @@ namespace CacheLearn.Cache
         #region 插入缓存数据，指定缓存多少秒  
         public bool Set<T>(string CacheKey, T objObject, int seconds)
         {
-            DateTime expiresAt = DateTime.Now.AddSeconds(seconds);
-            HttpRuntime.Cache.Insert(CacheKey, objObject, null, expiresAt, Cache.NoSlidingExpiration);
-            HttpRuntime.Cache.Insert(CacheKey + "_time", expiresAt, null, expiresAt, Cache.NoSlidingExpiration);//存储过期时间  
+            //DateTime expiresAt = DateTime.Now.AddSeconds(seconds);
+            //HttpRuntime.Cache.Insert(CacheKey, objObject, null, expiresAt, Cache.NoSlidingExpiration);
+            //HttpRuntime.Cache.Insert(CacheKey + "_time", expiresAt, null, expiresAt, Cache.NoSlidingExpiration);//存储过期时间  
             return true;
         }
         #endregion

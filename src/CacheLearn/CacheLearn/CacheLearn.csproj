@@ -39,12 +39,6 @@
     <Reference Include="Memcached.ClientLibrary">
       <HintPath>C:\Users\HouWeiya\Desktop\dotnetCache\Memcached.ClientLibrary\Memcached.ClientLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="ServiceStack, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.5.0.2\lib\net45\ServiceStack.dll</HintPath>
-    </Reference>
-    <Reference Include="ServiceStack.Client, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.Client.5.0.2\lib\net45\ServiceStack.Client.dll</HintPath>
-    </Reference>
     <Reference Include="ServiceStack.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
       <HintPath>..\packages\ServiceStack.Common.5.0.2\lib\net45\ServiceStack.Common.dll</HintPath>
     </Reference>
@@ -74,7 +68,8 @@
     <Compile Include="Cache\RedisCache.cs" />
     <Compile Include="Cache\Redis\RedisHelper.cs" />
     <Compile Include="Cache\RuntimeCache.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="Extension.cs" />
+    <Compile Include="UserInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

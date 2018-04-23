@@ -34,13 +34,14 @@ namespace CacheLearn.Cache.Redis
         public static PooledRedisClientManager prcm = CreateManager(new string[] { RedisPath }, new string[] { RedisPath });
         private static PooledRedisClientManager CreateManager(string[] readWriteHosts, string[] readOnlyHosts)
         {
-            // 支持读写分离，均衡负载 
-            return new PooledRedisClientManager(readWriteHosts, readOnlyHosts, new RedisClientManagerConfig
+            var redisClientManagerConfig = new RedisClientManagerConfig
             {
                 MaxWritePoolSize = 5, // “写”链接池链接数 
                 MaxReadPoolSize = 5, // “读”链接池链接数 
-                AutoStart = true,
-            });
+                AutoStart = true
+            };
+            // 支持读写分离，均衡负载 
+            return new PooledRedisClientManager(readWriteHosts, readOnlyHosts, redisClientManagerConfig);
         }
         #endregion
 

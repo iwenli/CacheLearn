@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheLearn", "CacheLearn\CacheLearn.csproj", "{96443C57-8820-4BAF-95F3-A652D79F5497}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WirteTest", "Test1\WirteTest.csproj", "{EFB8DD22-E2E9-476D-9EB5-4DF12AF73726}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadTest", "ReadTest\ReadTest.csproj", "{73450D2A-876B-48EE-82A9-CFFE18E607CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{96443C57-8820-4BAF-95F3-A652D79F5497}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96443C57-8820-4BAF-95F3-A652D79F5497}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96443C57-8820-4BAF-95F3-A652D79F5497}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFB8DD22-E2E9-476D-9EB5-4DF12AF73726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFB8DD22-E2E9-476D-9EB5-4DF12AF73726}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFB8DD22-E2E9-476D-9EB5-4DF12AF73726}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFB8DD22-E2E9-476D-9EB5-4DF12AF73726}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73450D2A-876B-48EE-82A9-CFFE18E607CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73450D2A-876B-48EE-82A9-CFFE18E607CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73450D2A-876B-48EE-82A9-CFFE18E607CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73450D2A-876B-48EE-82A9-CFFE18E607CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
