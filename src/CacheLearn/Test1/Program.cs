@@ -41,7 +41,7 @@ namespace Test1
                     continue;
                 }
             }
-            System.Console.WriteLine("创建缓存完成,共计:{0}条，耗时{1}毫秒".FormatWith(_count),stopwatch.ElapsedMilliseconds);
+            System.Console.WriteLine("创建缓存完成,共计:{0}条，耗时{1}毫秒".FormatWith(_count,stopwatch.ElapsedMilliseconds));
             System.Console.ReadKey();
         }
 
